@@ -184,3 +184,69 @@
     text-decoration: none;
     color: black;
 }
+
+/* General styles (already present in your file) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive adjustments for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .nav .item, .nav .btn {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .home .left, .home .right {
+        width: 100%;
+        text-align: center;
+    }
+    .home .left .txt1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive adjustments for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .nav {
+        column-gap: 10px;
+    }
+    .nav .item a {
+        font-size: 0.9rem;
+    }
+    .nav .btn input {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .home .main-sec {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .home .right img {
+        width: 80%;
+    }
+    .loc-sec .main-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .foot-sec {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 20px;
+    }
+}
